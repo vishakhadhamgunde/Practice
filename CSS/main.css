@@ -1,21 +1,69 @@
-ul {
+body {
+  background-color: #c0bcbc;
+  border: 5px solid lightcoral;
+  border-image: url("paper.gif");
+  background-repeat: repeat-x;
+  margin: 25px 50px 75px 100px;
+  font-family: 'Times New Roman', Times, serif;
+}
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+p {
+  margin: 500px;
+  text-align: justify;
+}
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; 
+  background: #ccc;
+  padding: 20px;
+}
+ h1{
+  color: #352c2c;
+  text-align: center;
+}
+p {
+  margin: 500px;
+  text-align: justify;
+}
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 60px;
 } 
-
-li a {
-  display: block;
-  background-color: #dddddd;
-
-h1 {
-  color: black;
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px;
 }
-div {
-    background-color: lightgrey;
-    width: 300px;
-    border: 25px solid lightseagreen;
-    padding: 25px;
-    margin: 25px;
+
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
   }
+}
