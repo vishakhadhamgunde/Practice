@@ -5,14 +5,12 @@ body{
 }
 a:link, a:visited {
     background-color: #3490ce;
-    color: white;
+    color: rgb(172, 206, 206);
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
   }
-  
-  
   a:hover, a:active {
     background-color: rgb(12, 34, 105);
   }
