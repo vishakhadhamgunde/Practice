@@ -1,43 +1,46 @@
 *{
     box-sizing: border-box;
 }
-.header{
-    background-color: lightgray;
+body {
+    margin:0;
+}
+.header {
+    background-color:rgb(114, 23, 23);
     padding: 20px;
     text-align: center;
 }
-.navtop{
+.topnav {
     overflow: hidden;
     background-color: lightcoral;
 }
-.navtop .a{
+.topnav a {
     float: left;
     padding: 14px 16px;
     text-align: center;
     color: rgb(37, 32, 25);
     display: block;
 }
-.topnav .hover {
+.navtop a:hover {
     background-color: rgb(165, 23, 82);
     color: lightcoral;
 }
-.column{
+.column {
     float: left;
     padding: 10px;
 }
 .column.side {
-width: 25%
+width: 25%;
 }
 .column.middle{
-width: 50%
+width: 50%;
 }
-.row:after{
+.row:after {
     content: "";
     display: table;
     clear: both;
 }
 @media screen and (width:600px){
     .column.side, .column.middle{
-       width:100%
+       width:100%;
     }
 }
