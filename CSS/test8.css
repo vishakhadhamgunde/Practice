@@ -2,64 +2,88 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Times New Roman', Times, serif;
-    padding: 20px;
-    background-color: #f1f1f1;
-}
+    font-family: Times New Roman;
+    padding: 40px;
+    background-color: #5d001e;
+    }
 .header {
     padding: 30px;
     text-align: center;
-    background:white;
+    background: #e3e2df;
+    border-radius: 15px;
+    border: 2px solid #ee4c7c;
 }
 .header h1 {
     font-size: 50px;
+    font-family: Lucida Sans;
+    color: #9a1750;
 }
 .topnav{
     overflow: hidden;
-    background-color: #333;
+    background-color: #9a1750;
+    border: 2px solid #ee4c7c;
+    border-radius: 10px;
 }
 .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #e3afbc;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-color: 2px solid #ee4c7c;
+    border-radius: 10px;
 }
 .topnav a:hover {
-    background-color:#ddd;
-    color: black;
+    background-color: #ee4c7c;
+    color: rgb(0, 0, 0);
 }
 .left column {
     float: left;
-    width: 75%;
+    width: 25%;
+    border: 2px solid #ee4c7c;
+    border-radius: 10px;
 }
 .right column {
-    float: left;
-    width: 25%;
-    background-color: #f1f1f1;
-    padding-left: 20px;
+    float: right;
+    width: 50%;
+    background-color: #e3e2df;
+    padding-left: 20px; 
+    border: 2px solid #ee4c7c;
+    border-radius: 10px;
+
 }
 .fakeimg {
-    background-color: #aaa;
+    background-color: #e3e2df;
     width: 100%;
     padding: 20px;
+    border: 2px solid #ee4c7c;
 }
 .card {
-    background-color: white;
+    background-color: #e3e2df;
     padding: 20px;
     margin-top: 20px;
+    border: 2px solid #ee4c7c;
+    border-radius: 10px;
 }
-.row:after {
+.row::after {
     content: "";
+    clear: both;
     display: table;
+}
+.clearfix{
+    content: "";
     clear:both;
+    display: table;
+
 }
 .footer {
     padding: 20px;
     text-align: center;
     background: #ddd;
     margin-top: 20px;
+    border: 2px solid #ee4c7c;
+    border-radius: 10px;
 }
 @media screen and (max-width: 800px) {
 .leftcolumn, .rightcolumn{
@@ -69,7 +93,7 @@ body {
 }
 @media screen and (max-width: 400px){
     .topnav a {
-        float: none;
+        float:noneS;
         width: 100%;
     }
 }
