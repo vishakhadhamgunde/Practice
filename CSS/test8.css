@@ -7,6 +7,7 @@ body {
     background-color: #5d001e;
     }
 .header {
+    width: 100%;
     padding: 30px;
     text-align: center;
     background: #e3e2df;
@@ -19,10 +20,10 @@ body {
 }
 .image{
     background-color: #e3e2df;
-    padding: 20px;
-    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
     border: 2px solid #ee4c7c;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 .header h1 {
     font-size: 50px;
@@ -57,18 +58,19 @@ body {
 }
 .right column {
     float: right;
-    width: 50%;
+    width: 70%;
     background-color: #e3e2df;
-    padding-left: 20px; 
+    padding-left: 10px; 
     border: 2px solid #ee4c7c;
     border-radius: 10px;
 
 }
-.fakeimg {
+.fakeimg{
     background-color: #e3e2df;
-    width: 100%;
+    width: 80%;
     padding: 10px;
     border: 2px solid #ee4c7c;
+    border-radius: 20px;
 }
 .card {
     background-color: #e3e2df;
@@ -103,7 +105,7 @@ body {
 }
 @media screen and (max-width: 400px){
     .topnav a {
-        float:noneS;
+        float:none;
         width: 100%;
     }
 }
