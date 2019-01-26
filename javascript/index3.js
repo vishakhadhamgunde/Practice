@@ -15,5 +15,4 @@ var person = {
 console.log(person);
 console.log(person.daughter.Name);
  
-person.myfunc(person.daughter.name,person.firstName,
-person.daughter.age);
+person.myfunc(person.daughter.name,person.firstName,person.daughter.age);
