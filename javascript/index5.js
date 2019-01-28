@@ -5,5 +5,5 @@ var i=0;
 do{
     console.log(colors[i]);
     i++;
-}while (i>colors.length);
+}while (i<colors.length);
     
