@@ -7,13 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../CSS/table.css" />
     <script src="../JAVASCRIPT/table.js"></script>
+    <style>
+    table, td {
+        border: 1px solid black;
+      }
+      </style>
 </head>
 <body>
-
-    <h2>Table Name - Users</h2>
-
-       
-        <table border=1>
+    <h2>Add User <hr></h2> 
+<form >
+        Username: <br>
+        <input type="text" id="firstname" name="firstname">
+        <br><br>
+        Email-Addresss: <br>
+        <input type="email" id="emailaddress" name="emailaddress">
+        <br><br>
+        password: <br>
+        <input type="password" id="password" name="password">
+        <br><br>
+        select gender: <br>
+        <select name="gender" id="gender">
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="other">other</option>
+        </select> <br> <br>
+        <button type="button" onclick="adduser();">AddUser</button><br>
+</form>
+    <h2>Table Name - Users <hr></h2>
+        <table border="1px" id="data">
         <tr>
             <th>id</th>
             <th>username</th>
@@ -21,6 +42,7 @@
             <th>password</th>
             <th>gender</th>
         </tr>
+
         <tr >
             <td>1</td>
             <td>vishakha</td>
@@ -35,34 +57,39 @@
                 <td>h7873</td>
                 <td>female</td>
             </tr>
+    
             <tr>
-                    <td>3</td>
-                    <td>mahesh</td>
-                    <td>mahesh7@gmail.com</td>
-                     <td>dhsu67</td>
-                     <td>male</td>
-                </tr>
-                <tr>
-                        <td>4</td>
-                        <td>aditi</td>
-                        <td>aditi5@gmail.com</td>
-                        <td>tyi8</td>
-                        <td>female</td>
-                    </tr>
-                    <tr>
-                            <td>5</td>
-                            <td>john</td>
-                            <td>john23@gmail.com</td>
-                            <td>2t63d</td>
-                            <td>male</td>
-                        </tr>
-                        <tr>
-                                <td>6</td>
-                                <td>jack</td>
-                                <td>jack987@gmail.com</td>
-                                <td>2br8rc</td>
-                                <td>male</td>
-                            </tr>
+                <td>3</td>
+                <td>mahesh</td>
+                <td>mahesh7@gmail.com</td>
+                <td>dhsu67</td>
+                <td>male</td>
+            </tr>
+                
+            <tr>
+                <td>4</td>
+                <td>aditi</td>
+                <td>aditi5@gmail.com</td>
+                <td>tyi8</td>
+                <td>female</td>
+            </tr>
+    
+            <tr>
+                <td>5</td>
+                <td>john</td>
+                <td>john23@gmail.com</td>
+                <td>2t63d</td>
+                <td>male</td>
+            </tr>
+    
+            <tr>
+                <td >6</td>
+                <td>jack</td>
+                <td>jack987@gmail.com</td>
+                <td>2br8rc</td>
+                <td>male</td>
+            </tr> 
+       
     </table>
 </body>
 </html>

@@ -7,5 +7,5 @@ function signup(){
     localStorage.setItem("username","vishakha");
     localStorage.setItem("password","dv123");
     alert("user logged in" + " " +  localStorage.getItem("username") + " " + localStorage.getItem("password"));
-    console.log(firstname + lastname + emailaddress + password +selectgender)
+    console.log(firstname + lastname + emailaddress + password + selectgender)
 } 

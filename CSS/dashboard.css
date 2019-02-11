@@ -1,0 +1,66 @@
+body {
+    font-family: Arial;
+    padding: 4px;
+    background: #f1f1f1;
+  }
+.nav-bar{
+    overflow: hidden;
+    background-color:rgb(72, 72, 253);;
+    border: 1px solid rgb(72, 72, 253);
+    border-radius: 4px;
+  }
+p{
+    text-align: right;
+    color: white;
+}
+ input[type=button]{
+    float: right;
+    display: block;
+    color: white;
+    padding:10px 16px; 
+    background-color:rgb(72, 72, 253);
+    border: 1px solid rgb(252, 252, 255) ;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+ input[type=button]:hover {
+    background-color:#555;
+}
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    width: 200px;
+    background-color:#555;
+    border: 1px solid #555;
+    border-radius: 4px;
+    position: fixed;
+    height: 80%;
+    overflow: auto;
+}.nav-menu a {
+    display: block;
+    color:white;
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+.nav-menu a:hover {
+    background-color: rgb(180, 180, 180);
+    color: white;
+}
+  
+@media screen and (max-width: 400px) {
+   
+    .nav-bar a {
+        float: none;
+        width: 100%;
+      }
+     
+    .nav-menu a {
+        float: none;
+      }
+    
+    }
