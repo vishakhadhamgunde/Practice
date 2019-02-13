@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman';
+    background-color: #F5F5F5;
+}
+.loginpage{
+    width: 600px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 180px;
+    padding: 20px;
+    background-color: white;
+    border:2px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 7px 7px 10px 10px lightgray;
+}
+.loginpage input[type=text],input[type=password]{
+    width: 530px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding:5px;
+    border:1px solid lightgray;
+    border-radius: 5px;
+}
+.loginpage input[type=radio]{
+    transform: scale(1.3);
+    margin: 0 10px 0 10px;
+}
+.loginpage .button-login{
+    margin-left: 230px;
+    width: 100px;
+    height: 30px;
+    padding:5px;
+    border:1px solid #0099CC;
+    background-color:#0099CC ;
+    color: white;
+    border-radius: 3px;
+    font-size: 18px;
+}
+.button-login:hover{
+    background-color: rgb(236, 251, 255);
+    color:gray;
+}

@@ -9,7 +9,9 @@
     <script src="../JAVASCRIPT/signup.js"></script>
 </head>
 <body>
-    <h2>Sign Up Your Account</h2>
+    <div class="signuppage">
+    <h2 style="text-align:center">Sign Up Your Account</h2>
+    <hr>
     <form>
             UserName: <br>
             <input id="username" name="username" type="text">
@@ -18,15 +20,15 @@
             <input id="email" type="email" name="email address">
             <br><br>
             Password:<br>
-            <input id="password" type="text" name="Password" >
+            <input id="password" type="password" name="Password" >
             <br><br>
             CollageName:<br>
             <input id="collagename" name="collage" type="text" >
+            <br><br>
+            <input type="radio" id="maleRadio" name="gender" value="male">Male<input type="radio" id="femaleRadio" name="gender" value="female">Female<br>
             <br>
-            <input type="radio" id="maleRadio" name="gender" value="male">male<br> 
-            <input type="radio" id="femaleRadio" name="gender" value="female">female<br>
-            <br>
-            <button type="button"  onclick="signup()">submit</button>
+            <button class="signup-button" type="button" onclick="signup()">SignUp</button>
     </form>
+    </div>
 </body>
 </html>

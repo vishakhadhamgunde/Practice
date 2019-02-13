@@ -1,12 +1,10 @@
-function signup(){
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-    localStorage.getItem("username");
-    localStorage.getItem("password");
-    var localstoragename = localStorage.getItem("username");
-    var localstoragepassword = localStorage.getItem("password");
+function loadDashboard(){
+    var x = localStorage.getItem("username");
+    document.getElementById("username").innerHTML = x;
+}
 
-    if(username == localstoragename && password == localstoragepassword){
-        document.location.href = "dashboard.html";
-    }
-} 
+function logout(){
+    console.log("logging out");
+    localStorage.setItem("logout","true");
+    window.location.href = "login.html";
+}
