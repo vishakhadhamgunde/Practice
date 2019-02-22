@@ -5,6 +5,10 @@ body{
     font-family: 'Times New Roman';
     background-color:#F5F5F5;
 }
+.form{
+    margin-right: 100px;
+    margin-left: 70px;
+}
 .signuppage{
     width: 600px;
     overflow: hidden;
@@ -17,7 +21,7 @@ body{
     box-shadow: 7px 7px 10px 10px lightgray;
 }
 .signuppage input[type=text],input[type=password]{
-    width: 530px;
+    width: 400px;
     height: 40px;
     margin-bottom: 10px;
     padding: 5px;
@@ -25,7 +29,7 @@ body{
     border-radius: 5px;
 }
 .signuppage input[type=email]{
-    width: 530px;
+    width: 400px;
     height: 40px;
     margin-bottom: 5px;
     padding: 5px;

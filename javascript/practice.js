@@ -1,12 +1,20 @@
-var points= [2,35,4,5,43565,7,7343];
-document.getElementById("demo1").innerHTML = points;
+function login(uName, pwd) {
 
-function sortalpha(){
-    points.sort();
-    document.getElementById("demo1").innerHTML = points;
-}
+	$.ajax({
+		url: "http://localhost:3000/getLoginPage",
+		type: 'GET',
+		dataType: 'JSON',
+		/*data: JSON.stringify({
+         "userName": uName,
+         "password" :pwd
+		}),*/
+		success: function (data1, textStatus) {
+		    console.log("in success");
+        },
+        error: function(error){
+            console.log("Inside error block.");
+        }
+    });
 
-function sortnum(){
-    points.sort(function(a,b){return a-b});
-    document.getElementById("demo1").innerHTML = points;
+    console.log("line after ajax");
 }

@@ -6,16 +6,37 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../CSS/practice.css" />
-
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body>        
-            <h2></h2>  
-            <button onclick="sortalpha()">alphabetically sorting</button>
-            <button onclick="sortnum()">numerical sorting</button>
+            <h2>This HMTL file is only for practice purpose</h2>  
+           
+            <p id="practice"></p>
 
-            <p id="demo1"></p>
+            <button onclick="register()">register</button>
 
-            <script src="../JAVASCRIPT/practice.js"></script>
-
+            <script>
+                function register(uName, pwd) {
+            
+                    $.ajax({
+                                url: "http://localhost:3000/register",
+                                type: 'POST',
+                                dataType: 'JSON',
+                                data: JSON.stringify({
+                                "username":uName ,
+                                "password" :pwd
+                                }),
+                            success: function (data1, textStatus){
+                            console.log("in success");
+                            console.log("data is" + data1.username);
+                            },
+                            error: function(error){
+                            console.log("Inside error block.");
+                            }
+                        });
+                        console.log("line after ajax");
+                }
+            </script>
+            
 </body>
 </html>
