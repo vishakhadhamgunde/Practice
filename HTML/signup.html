@@ -6,6 +6,7 @@
     <title>Sign Up </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../CSS/signup.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../JAVASCRIPT/signup.js"></script>
 </head>
 <body>
@@ -14,7 +15,7 @@
     <hr>
     <form>
             <div class="form">
-            UserName: <br>
+            UserName:<br>
             <input id="username" name="username" type="text">
             <br><br>
             Email Address:<br>
@@ -29,7 +30,15 @@
             <input type="radio" id="maleRadio" name="gender" value="male">Male<input type="radio" id="femaleRadio" name="gender" value="female">Female<br>
             </div>
             <br>
-            <button class="signup-button" type="button" onclick="signup()">SignUp</button>
+            <button class="signup-button" type="button" onclick="signup()">SignUp</button><br><br>
+            <div id="message" style="color:red"></div>
+            <hr>
+        <ul  class="icon-bar">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li> 
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li> 
+                <li><a href="#"><i class="fa fa-google"></i></a></li> 
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
     </form>
     </div>
 </body>

@@ -8,15 +8,18 @@ function login() {
         document.location.href = "dashboard.html";
     }
     else{
-        document.getElementById("message").innerHTML = ("Entered password or username is wrong!");
+        document.getElementById("message").innerHTML = ("Entered password or username is incorrect !");
     }
 }
-
-
 function loadLoginPage(){
     var x = localStorage.getItem("logout");
     if (x == "true"){
-        document.getElementById("logout").innerHTML=("you are successfully logged out!");
+        document.getElementById("logout").style.display == 'block';
+    }else{
+     document.getElementById("logout").style.display = 'none'; 
     }
     localStorage.removeItem("logout");
+}   
+function loadsignuppage(){
+    document.location.href = "signup.html"
 }

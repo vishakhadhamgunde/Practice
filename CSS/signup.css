@@ -13,7 +13,8 @@ body{
     width: 600px;
     overflow: hidden;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     padding: 20px;
     background-color:white;
     border:2px solid lightgray;
@@ -46,13 +47,43 @@ body{
     width: 100px;
     height: 30px;
     padding: 5px;
-    border:1px solid #0099CC;
-    background-color:#0099CC;
+    border:1px solid #FF851B;
+    background-color:#FF851B;
     color: white;
     border-radius: 3px;
     font-size: 18px;
  }
 .signup-button:hover{
-    background-color: rgb(236, 251, 255);
-    color:gray;
+  background-color: white;
+  border:1px solid lightgray;
+    color:#FF851B;
 }
+.icon-bar{
+    list-style-type: none;
+    margin-left: 190px;
+    padding: 0;
+
+}
+ .icon-bar ul  {
+    list-style-type: none;
+    bottom: 2px;
+    position:fixed;
+    overflow: auto;
+  }
+  .icon-bar li  {
+    float:left;
+  }  
+  .icon-bar li a {
+    display: block;
+    color:#3B5998;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .icon-bar li a:hover:not(.active) {
+    background-color: #111;
+  }
+  .active {
+    background-color: #4CAF50;
+  }

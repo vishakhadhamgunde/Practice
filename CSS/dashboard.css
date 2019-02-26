@@ -5,23 +5,27 @@ body {
   }
 .nav-bar{
     overflow: hidden;
-    background-color:rgb(72, 72, 253);;
-    border: 1px solid rgb(72, 72, 253);
+    background-color:#001f3f;
+    border: 1px solid #001f3f;
     border-radius: 4px;
+    height:40px;
   }
-  .logoutbutton{
+  /*.logoutbutton{
     float:right;
-  }
+  }*/
 p{
-    text-align: right;
+    text-align: center;
     color: white;
+    float: right;
+    display:block;
 }
  input[type=button]{
     float: right;
+    height:40px;
     display: block;
     color: white;
     padding:10px 16px; 
-    background-color:rgb(72, 72, 253);
+    background-color:#001f3f;
     border: 1px solid rgb(252, 252, 255) ;
     border-radius: 4px;
     text-align: center;
@@ -29,29 +33,32 @@ p{
     cursor: pointer;
 }
  input[type=button]:hover {
-    background-color:#555;
+    background-color:#FF851B;
 }
 .nav-menu {
     list-style-type: none;
     margin: 0;
     padding: 10px;
     width: 200px;
-    background-color:#555;
-    border: 1px solid #555;
+    background-color:white;
+    border: 1px solid white;
     border-radius: 4px;
     position: fixed;
-    height: 80%;
+    height: 87%;
     overflow: auto;
 }.nav-menu a {
     display: block;
-    color:white;
-    border: 1px solid #555;
+    color:#001f3f;
+    border: 1px solid white;
     border-radius: 4px;
     padding: 10px 16px;
     text-decoration: none;
 }
+.nav-menu i{
+  padding:2px 18px;
+}
 .nav-menu a:hover {
-    background-color: rgb(180, 180, 180);
+    background-color:#FF851B ;
     color: white;
 }
   

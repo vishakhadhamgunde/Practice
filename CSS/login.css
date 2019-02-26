@@ -13,7 +13,7 @@ body{
     width: 600px;
     overflow: hidden;
     margin: auto;
-    margin-top: 180px;
+    margin-top: 130px;
     margin-right: 100px;
     margin-left: 370px;
     padding: 20px;
@@ -37,15 +37,84 @@ body{
 .loginpage .button-login{
     margin-left: 230px;
     width: 100px;
+    border:1px solid #FF851B;
+    background-color:#FF851B ;
     height: 30px;
     padding:5px;
-    border:1px solid #0099CC;
-    background-color:#0099CC ;
-    color: white;
+color: white;
     border-radius: 3px;
     font-size: 18px;
 }
 .button-login:hover{
-    background-color: rgb(236, 251, 255);
-    color:gray;
+  background-color: white;
+  border:1px solid lightgray;
+    color:#FF851B;
+}
+p{
+  text-align:center;
+}
+.button-signup{
+  width: 60px;
+  border:1px solid #FF851B;
+  background-color:#FF851B ;
+  height: 30px;
+  padding:5px;
+  color: white;
+  border-radius: 3px;
+  font-size: 15px;
+}
+.button-signup:hover{
+  background-color: white;
+  border:1px solid lightgray;
+    color:#FF851B;
+}
+.icon-bar{
+    list-style-type: none;
+    margin-left: 200px;
+    margin-right:30px;
+    padding: 0;
+    background-color:blue;
+}
+ .icon-bar ul  {
+    list-style-type: none;
+    bottom: 2px;
+    position:fixed;
+    overflow: auto;
+  }
+  .icon-bar li  {
+    float:left;
+  }  
+  .icon-bar li a {
+    display: block;
+    color:#3B5998;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+  .icon-bar li a:hover:not(.active) {
+    background-color: #111;
+  }
+  .active {
+    background-color: #4CAF50;
+  }
+#logout{
+  font-family:sans-serif;
+  display: block;
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  margin: auto;
+  border: 2px solid rgb(240, 240, 240);
+  margin-top: 20px;
+  margin-left: 130px;
+  margin-right: 50px;
+  border-radius: 4px;
+  background-color:rgb(240, 240, 240);
+  text-align: center;
+}
+#message{
+  font-family:sans-serif;
+  display: block;
+  margin-top: 20px;
+  text-align: center; 
 }

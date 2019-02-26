@@ -3,17 +3,18 @@
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Html Login</title>
+    <title>Login page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../CSS/login.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../JAVASCRIPT/login.js"></script>
 </head>
 <body onload="loadLoginPage()">
-    <div id="logout"></div>
   <div class="loginpage">
     <h2 style="text-align:center;">Login Page</h2>
     <hr><br>
     <form>
+        <div id="logout"><b>You are successfully logged out !</b></div><br>
         <div class="form">
         Username:<br>
         <input id="username" name="username" type="text">
@@ -22,10 +23,20 @@
         <input id="password" name="password" type="password">
         <br><br>
         </div>
-        <button class="button-login" type="button" onclick="login()">Login</button>
-        <div id="message" style="color:red">
-        </div> 
-        
+        <button class="button-login" type="button" onclick="login()">Login</button><br><br>
+        <!----
+        <div id="createaccount">Don't have an account?<a href="signup.html">sign up</a></div> -->
+        <p>Don't have an account? <button class="button-signup" type="button" onclick="loadsignuppage()">signup</button></p>
+        <hr>
+        <ul class="icon-bar">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li> 
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li> 
+                <li><a href="#"><i class="fa fa-google"></i></a></li> 
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+        <br>
+        <div id="message" style="color:red"></div> 
+        <br>
     </form>
     </div>
 </body>
