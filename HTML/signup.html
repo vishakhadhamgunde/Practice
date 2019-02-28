@@ -11,34 +11,35 @@
 </head>
 <body>
     <div class="signuppage">
-    <h2 style="text-align:center">Sign Up Your Account</h2>
+    <h2 style="text-align:center">Sign Up</h2>
     <hr>
-    <form>
+    <form name="signupform" onsubmit="signup()" method="POST">
             <div class="form">
-            UserName:<br>
-            <input id="username" name="username" type="text">
+            FirstName:<br>
+            <input id="firstname" name="firstname" type="text" required>
+            <br><br>
+            LastName:<br>
+            <input id="lastname" name="lastname" type="text" required>
             <br><br>
             Email Address:<br>
-            <input id="email" type="email" name="email address">
+            <input id="email" type="email" name="emailaddress" required>
             <br><br>
             Password:<br>
-            <input id="password" type="password" name="Password" >
+            <input id="password" type="password" name="Password" name="gender" required>
             <br><br>
-            CollageName:<br>
-            <input id="collagename" name="collage" type="text" >
-            <br><br>
-            <input type="radio" id="maleRadio" name="gender" value="male">Male<input type="radio" id="femaleRadio" name="gender" value="female">Female<br>
+            <input type="radio" id="gender" name="gender" value="male" required>Male<input type="radio" id="gender" name="gender" value="female" required>Female<br>
             </div>
             <br>
-            <button class="signup-button" type="button" onclick="signup()">SignUp</button><br><br>
-            <div id="message" style="color:red"></div>
-            <hr>
-        <ul  class="icon-bar">
+            <button class="signup-button" id="btn" type="button" onclick="signout()">SignUp</button><br><br>
+              <hr>
+            <div id="message"></div>
+            <ul  class="icon-bar">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li> 
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li> 
                 <li><a href="#"><i class="fa fa-google"></i></a></li> 
                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
         </ul>
+
     </form>
     </div>
 </body>

@@ -1,5 +1,5 @@
 function loadDashboard(){
-    var x = localStorage.getItem("username");
+    var x = localStorage.getItem("emailaddress");
     document.getElementById("username").innerHTML = x;
 }
 

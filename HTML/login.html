@@ -7,14 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../CSS/login.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
     <script src="../JAVASCRIPT/login.js"></script>
 </head>
-<body onload="loadLoginPage()">
+<body onload="loadLoginPage()" onload="signout()">
   <div class="loginpage">
-    <h2 style="text-align:center;">Login Page</h2>
-    <hr><br>
+    <h1 style="color:#FF851B">skynet<b style="color:#173b67">score</b></h1>
+    <hr>
     <form>
-        <div id="logout"><b>You are successfully logged out !</b></div><br>
+      <div id="createaccount">Don't have an account?<a href="signup.html">sign up</a></div>
+      <div id="logout"><b>You are successfully logged out !</b></div><br>
         <div class="form">
         Username:<br>
         <input id="username" name="username" type="text">
@@ -23,10 +28,8 @@
         <input id="password" name="password" type="password">
         <br><br>
         </div>
-        <button class="button-login" type="button" onclick="login()">Login</button><br><br>
-        <!----
-        <div id="createaccount">Don't have an account?<a href="signup.html">sign up</a></div> -->
-        <p>Don't have an account? <button class="button-signup" type="button" onclick="loadsignuppage()">signup</button></p>
+        <button class="button-login" type="button" onclick="login()" onclick="signout()">Login</button>
+        <div id="message" style="color:red"></div> 
         <hr>
         <ul class="icon-bar">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li> 
@@ -35,8 +38,7 @@
                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
         </ul>
         <br>
-        <div id="message" style="color:red"></div> 
-        <br>
+        <div id="signout">You have created new account !</div>
     </form>
     </div>
 </body>
