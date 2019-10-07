@@ -5,6 +5,9 @@ body{
     font-family: 'Times New Roman';
     background-color:#F5F5F5;
 }
+h1{
+  text-align:center;
+}
 .form{
     margin-right: 100px;
     margin-left: 70px;

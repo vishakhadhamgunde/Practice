@@ -4,10 +4,10 @@ function login(uName, pwd) {
 		url: "http://localhost:3000/getLoginPage",
 		type: 'GET',
 		dataType: 'JSON',
-		/*data: JSON.stringify({
+		data: JSON.stringify({
          "userName": uName,
          "password" :pwd
-		}),*/
+		}),
 		success: function (data1, textStatus) {
 		    console.log("in success");
         },
