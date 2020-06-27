@@ -10,23 +10,33 @@ body {
     border-radius: 4px;
     height:40px;
   }
+#icon{
+  float:left;
+  display:block;
+  font-size:30px;
+  padding:2px;
+  margin-top:2px;
+  margin-left:20px;
+}
   /*.logoutbutton{
     float:right;
   }*/
-p{
+#username{
     text-align: center;
+    margin-right:10px;
+    margin-top:15px;
     color: white;
     float: right;
-    display:block;
+    display: block;
 }
  input[type=button]{
     float: right;
-    height:40px;
+    height: 40px;
     display: block;
     color: white;
     padding:10px 16px; 
-    background-color:#001f3f;
-    border: 1px solid rgb(252, 252, 255) ;
+    background-color:#ff981b;
+    border: 2px solid #FF851B;
     border-radius: 4px;
     text-align: center;
     text-decoration: none;
@@ -41,7 +51,7 @@ p{
     padding: 10px;
     width: 200px;
     background-color:white;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 4px;
     position: fixed;
     height: 87%;
@@ -50,6 +60,7 @@ p{
     display: block;
     color:#001f3f;
     border: 1px solid white;
+    background-color:#ff981b;
     border-radius: 4px;
     padding: 10px 16px;
     text-decoration: none;

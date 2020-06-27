@@ -7,30 +7,32 @@
     <link rel="shortcut icon" type="image/jpg" href="https://icon-library.net/images/icon-jpg/icon-jpg-12.jpg">
     <link rel="stylesheet" href="../CSS/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Contact</title>
 </head>
 <body> <h1 style="text-align: center">CONTACT US</h1>
     <hr>
-    <h2>We would like to hear from you! </h2>
-    <form action="Contact.html">
-        <div class="contactform">
-            <h1>CONTACT US</h1>
-            <hr>
-            Firstname: <br>
-            <input type="text" name="firstname" id="firstname"> <br>
-            Email-Id: <br>
-            <input type="email" name="email-id" id="email-id"> <br>
-            Address: <br>
-            <input type="text" name="address" id="address"> <br>
-            Password: <br>
-            <input type="text" name="password" id="password"> <br>
-            Gender: <br>
-             <input type="radio" name="male" id="male">Male <input type="radio" name="female" id="female">female <br>
-            Feedback : <br>
-            <input type="text" name="feedback" id="feedback"> <br> <br>
-            <button class="contact-button" type="submit">Submit</button>
-            <hr>
+    <div id="after_submit"></div>
+<form id="contact_form" action="#" onsubmit="send_email()" method="POST" enctype="multipart/form-data">
+  <div class="row">
+    <label class="required" for="name">Username:</label><br />
+    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+    <span id="name_validation" class="error_message"></span>
+  </div>
+  <div class="row"> 
+    <label class="required" for="email">Email-Id:</label><br />
+    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+    <span id="email_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="message">Your message:</label><br />
+    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+    <span id="message_validation" class="error_message"></span>
+  </div>
+    
+    <button id="submit_button" type="submit">send email</button>
+
             <ul class="icon-bar">
                 <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li> 
                 <li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li> 

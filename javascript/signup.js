@@ -10,9 +10,8 @@ function signup() {
     localStorage.setItem("password",password);
     localStorage.setItem("emailaddress",emailaddress);
     localStorage.setItem("gender",gender);
-}
-function signout(){
+
         console.log("signed up");
-        localStorage.setItem("signout","true");
-        window.location.href = "login.html";
+        localStorage.setItem("signup","true");
+        
     } 

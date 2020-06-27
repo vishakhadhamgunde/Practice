@@ -14,19 +14,17 @@ function login() {
 function loadLoginPage(){
     var x = localStorage.getItem("logout");
     if (x == "true"){
-        document.getElementById("logout").style.display == 'block';
+        document.getElementById("logout").style.display = 'block';
     }else{
         document.getElementById("logout").style.display = 'none'; 
     }
     localStorage.removeItem("logout");
-}   
-function signout(){
-    var y = localStorage.getItem("signout");
-    var z = document.getElementById("signout");
+
+    var y = localStorage.getItem("signup");
     if(y == "true"){
-        document.getElementById("signout").style.display == 'block';
+        document.getElementById("signup").style.display = 'block';
     }else{
-        document.getElementById("signout").style.display = 'none'; 
+        document.getElementById("signup").style.display = 'none'; 
     }
-    localStorage.removeItem("signout");
-}
+    localStorage.removeItem("signup");
+}   
